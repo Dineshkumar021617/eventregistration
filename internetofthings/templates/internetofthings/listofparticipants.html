@@ -1,0 +1,21 @@
+{% extends "internetofthings/base.html" %}
+{% block content %}
+    <table class="table table-bordered">
+        <thead class="table-primary">
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Phone number</th>
+                <th scope="col">E-mail id</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for i in participants %}
+            <tr>
+                <th scope="row">{{i.name}}</th>
+                <td>{{i.phoneno}}</td>
+                <td>{{i.email}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

@@ -15,7 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from internetofthings import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('iotevent',views.home,name='home'),
+    path('home',views.home,name='home'),
+    path('registration/',views.registration,name='registration'),
+    path('listofparticipants',views.listofparticipants,name='listofparticipants'),
+    
 ]
