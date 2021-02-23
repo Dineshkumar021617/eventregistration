@@ -38,7 +38,16 @@ def registration(request):
 
 def listofparticipants(request):
     context={}
-    participants=Participant.objects.all()
-    context["participants"]=participants
-    return render(request , 'internetofthings/listofparticipants.html' , context)
-    
+    if request.method=='POST':
+        username=request.POST.get('username','-')
+        password=request.POST.get('password','-')
+        if username=='dk20004660' and password=='u63676':
+            participants=Participant.objects.all()
+            context["participants"]=participants
+            return render(request , 'internetofthings/listofparticipants.html' , context)
+        else:
+            return render(request,'internetofthings/loginfailed.html',context)
+    if request.method=='GET':
+        context['username']=""
+        context['paasword']=""
+    return render(request,'internetofthings/login.html',context)

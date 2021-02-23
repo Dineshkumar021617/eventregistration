@@ -22,6 +22,6 @@ urlpatterns = [
     path('iotevent',views.home,name='home'),
     path('home',views.home,name='home'),
     path('registration/',views.registration,name='registration'),
-    path('listofparticipants',views.listofparticipants,name='listofparticipants'),
+    path('listofparticipants/',views.listofparticipants,name='listofparticipants'),
     
 ]
