@@ -4,6 +4,12 @@
 To create a UX design and develop a web application for event registration.
 ## DESIGN STEPS:
 ## DESIGN SCREENS:
+![designscreen](./static/photos/designscreen.png)
+
+## WIREFRAME:
+![wireframe](./static/photos/wireframe.png)
+
+## PRoTOTYPE:
 ![designscreen](./static/photos/home.png)
 ![designscreen](./static/photos/registration.png)
 ![designscreen](./static/photos/success.png)
@@ -12,9 +18,6 @@ To create a UX design and develop a web application for event registration.
 ![designscreen](./static/photos/login.png)
 ![designscreen](./static/photos/loginfailed.png)
 ![designscreen](./static/photos/listofparticipants.png)
-
-## WIREFRAME:
-![wireframe](./static/photos/wireframe.png)
 
 ## PROGRAM:
 ### base.html:
